@@ -13,6 +13,14 @@
 		1C91098820F45D5600958E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C91098720F45D5600958E95 /* Assets.xcassets */; };
 		1C91098B20F45D5600958E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C91098920F45D5600958E95 /* LaunchScreen.storyboard */; };
 		1C91098E20F45D5600958E95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91098D20F45D5600958E95 /* main.m */; };
+		1C91099720F4604100958E95 /* PDFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91099620F4604100958E95 /* PDFWebViewController.m */; };
+		1C91099920F4984500958E95 /* 摄影初级教程.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1C91099820F4984500958E95 /* 摄影初级教程.pdf */; };
+		1C91099C20F4B25800958E95 /* PDFPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91099B20F4B25800958E95 /* PDFPageViewController.m */; };
+		1C91099F20F4B5B300958E95 /* PDFItem_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91099E20F4B5B300958E95 /* PDFItem_ViewController.m */; };
+		1C9109A520F4B91400958E95 /* PDFReaderFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9109A320F4B91400958E95 /* PDFReaderFileManager.m */; };
+		1C9109A620F4B91400958E95 /* PDFDocumentTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9109A420F4B91400958E95 /* PDFDocumentTools.m */; };
+		1C9109A920F4F0A000958E95 /* PDFShareTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9109A820F4F0A000958E95 /* PDFShareTools.m */; };
+		1CC8647A20F6FDCF002EB866 /* PDFOtherViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8647920F6FDCF002EB866 /* PDFOtherViewTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,22 @@
 		1C91098A20F45D5600958E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C91098C20F45D5600958E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C91098D20F45D5600958E95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C91099520F4604100958E95 /* PDFWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFWebViewController.h; sourceTree = "<group>"; };
+		1C91099620F4604100958E95 /* PDFWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFWebViewController.m; sourceTree = "<group>"; };
+		1C91099820F4984500958E95 /* 摄影初级教程.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "摄影初级教程.pdf"; sourceTree = "<group>"; };
+		1C91099A20F4B25800958E95 /* PDFPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFPageViewController.h; sourceTree = "<group>"; };
+		1C91099B20F4B25800958E95 /* PDFPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPageViewController.m; sourceTree = "<group>"; };
+		1C91099D20F4B5B300958E95 /* PDFItem_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFItem_ViewController.h; sourceTree = "<group>"; };
+		1C91099E20F4B5B300958E95 /* PDFItem_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFItem_ViewController.m; sourceTree = "<group>"; };
+		1C9109A120F4B91400958E95 /* PDFDocumentTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFDocumentTools.h; sourceTree = "<group>"; };
+		1C9109A220F4B91400958E95 /* PDFReaderFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFReaderFileManager.h; sourceTree = "<group>"; };
+		1C9109A320F4B91400958E95 /* PDFReaderFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFReaderFileManager.m; sourceTree = "<group>"; };
+		1C9109A420F4B91400958E95 /* PDFDocumentTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFDocumentTools.m; sourceTree = "<group>"; };
+		1C9109A720F4F0A000958E95 /* PDFShareTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFShareTools.h; sourceTree = "<group>"; };
+		1C9109A820F4F0A000958E95 /* PDFShareTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFShareTools.m; sourceTree = "<group>"; };
+		1CC8647820F6FDCF002EB866 /* PDFOtherViewTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFOtherViewTools.h; sourceTree = "<group>"; };
+		1CC8647920F6FDCF002EB866 /* PDFOtherViewTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFOtherViewTools.m; sourceTree = "<group>"; };
+		1CC8647F20F7019D002EB866 /* PDFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				1C91097E20F45D5600958E95 /* AppDelegate.h */,
+				1C91099420F45D9300958E95 /* PDFReader */,
 				1C91097F20F45D5600958E95 /* AppDelegate.m */,
+				1C91099820F4984500958E95 /* 摄影初级教程.pdf */,
 				1C91098120F45D5600958E95 /* ViewController.h */,
 				1C91098220F45D5600958E95 /* ViewController.m */,
 				1C91098420F45D5600958E95 /* Main.storyboard */,
@@ -69,6 +95,36 @@
 				1C91098D20F45D5600958E95 /* main.m */,
 			);
 			path = PDFReaderDemo;
+			sourceTree = "<group>";
+		};
+		1C91099420F45D9300958E95 /* PDFReader */ = {
+			isa = PBXGroup;
+			children = (
+				1C9109A020F4B91400958E95 /* PDFReaderTools */,
+				1C91099520F4604100958E95 /* PDFWebViewController.h */,
+				1C91099620F4604100958E95 /* PDFWebViewController.m */,
+				1C91099A20F4B25800958E95 /* PDFPageViewController.h */,
+				1C91099B20F4B25800958E95 /* PDFPageViewController.m */,
+				1C91099D20F4B5B300958E95 /* PDFItem_ViewController.h */,
+				1C91099E20F4B5B300958E95 /* PDFItem_ViewController.m */,
+			);
+			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		1C9109A020F4B91400958E95 /* PDFReaderTools */ = {
+			isa = PBXGroup;
+			children = (
+				1C9109A120F4B91400958E95 /* PDFDocumentTools.h */,
+				1C9109A420F4B91400958E95 /* PDFDocumentTools.m */,
+				1CC8647F20F7019D002EB866 /* PDFReader.h */,
+				1C9109A220F4B91400958E95 /* PDFReaderFileManager.h */,
+				1C9109A720F4F0A000958E95 /* PDFShareTools.h */,
+				1C9109A820F4F0A000958E95 /* PDFShareTools.m */,
+				1CC8647820F6FDCF002EB866 /* PDFOtherViewTools.h */,
+				1CC8647920F6FDCF002EB866 /* PDFOtherViewTools.m */,
+				1C9109A320F4B91400958E95 /* PDFReaderFileManager.m */,
+			);
+			path = PDFReaderTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +188,7 @@
 				1C91098B20F45D5600958E95 /* LaunchScreen.storyboard in Resources */,
 				1C91098820F45D5600958E95 /* Assets.xcassets in Resources */,
 				1C91098620F45D5600958E95 /* Main.storyboard in Resources */,
+				1C91099920F4984500958E95 /* 摄影初级教程.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C91099720F4604100958E95 /* PDFWebViewController.m in Sources */,
 				1C91098320F45D5600958E95 /* ViewController.m in Sources */,
 				1C91098E20F45D5600958E95 /* main.m in Sources */,
+				1C91099C20F4B25800958E95 /* PDFPageViewController.m in Sources */,
+				1CC8647A20F6FDCF002EB866 /* PDFOtherViewTools.m in Sources */,
+				1C91099F20F4B5B300958E95 /* PDFItem_ViewController.m in Sources */,
+				1C9109A520F4B91400958E95 /* PDFReaderFileManager.m in Sources */,
+				1C9109A920F4F0A000958E95 /* PDFShareTools.m in Sources */,
 				1C91098020F45D5600958E95 /* AppDelegate.m in Sources */,
+				1C9109A620F4B91400958E95 /* PDFDocumentTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
