@@ -118,11 +118,11 @@
 				1C9109A420F4B91400958E95 /* PDFDocumentTools.m */,
 				1CC8647F20F7019D002EB866 /* PDFReader.h */,
 				1C9109A220F4B91400958E95 /* PDFReaderFileManager.h */,
+				1C9109A320F4B91400958E95 /* PDFReaderFileManager.m */,
 				1C9109A720F4F0A000958E95 /* PDFShareTools.h */,
 				1C9109A820F4F0A000958E95 /* PDFShareTools.m */,
 				1CC8647820F6FDCF002EB866 /* PDFOtherViewTools.h */,
 				1CC8647920F6FDCF002EB866 /* PDFOtherViewTools.m */,
-				1C9109A320F4B91400958E95 /* PDFReaderFileManager.m */,
 			);
 			path = PDFReaderTools;
 			sourceTree = "<group>";

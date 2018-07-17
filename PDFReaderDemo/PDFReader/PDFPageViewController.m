@@ -10,12 +10,14 @@
 #import "PDFItem_ViewController.h"
 #import "PDFDocumentTools.h"
 #import "PDFShareTools.h"
+#import "PDFReaderFileManager.h"
+#import "PDFOtherViewTools.h"
 @interface PDFPageViewController ()<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 /** _pageTotal */
 @property (nonatomic, assign) NSInteger pageTotal;
 @property (assign, nonatomic) CGPDFDocumentRef  pdfRef;
 @property (strong, nonatomic) NSMutableArray  *visibleVCArray;
-
+@property (nonatomic, assign) NSInteger currentPage;
 @end
 
 @implementation PDFPageViewController
@@ -23,9 +25,44 @@
     NSLog(@"%s",__func__);
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+   
+    
+    [PDFReaderFileManager setFileScanPercent:@(0) withUrl:self.filePath currentPage:_currentPage];
+    
+//    UIDeviceOrientation  currentOrientation = [[UIDevice currentDevice] orientation];
+//    if (currentOrientation != UIDeviceOrientationPortrait) {
+//        NSNumber *orientationUnknown = [NSNumber numberWithInt:UIInterfaceOrientationUnknown];
+//        [[UIDevice currentDevice] setValue:orientationUnknown forKey:@"orientation"];
+//
+//        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+//        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+//
+//    }
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.currentPage = [PDFReaderFileManager getFileScanHistoryPageWithUrl:self.filePath];
+    if (_currentPage > 1) {
+        PDFItem_ViewController * vc1 = [self viewControllerAtIndex:_currentPage-1 current:_currentPage];
+        
+        [self setViewControllers:@[vc1] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:^(BOOL finished) {
+        }];
+    }
+  
+    [PDFOtherViewTools loadHistoryView:self.view withCurrentPage:_currentPage];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    
     _visibleVCArray = @[].mutableCopy;
     self.delegate = self;
     self.dataSource = self;
@@ -67,9 +104,11 @@
 - (PDFItem_ViewController *)viewControllerAtIndex:(NSUInteger)index current:(NSUInteger)currentIndex
 {
     //Return the PDFViewController for the given index.
+    
     if ((index > _pageTotal) ) {
         return nil;
     }
+    _currentPage = index;
     PDFItem_ViewController *dataViewController = nil;
     //Create a new view controller and pass suitable data.
     if (self.visibleVCArray.count > 0) {
